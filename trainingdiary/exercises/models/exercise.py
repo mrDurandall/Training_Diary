@@ -35,3 +35,6 @@ class Exercise(models.Model):
         verbose_name = 'Упражнение'
         verbose_name_plural = 'Упражнения'
         ordering = ['-created_on']
+
+    def __str__(self):
+        return f'Упражнение "{self.title}"'
