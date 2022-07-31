@@ -1,5 +1,4 @@
 **/secrets.py
-**/migrations
 .idea
 venv
 __pycache__
