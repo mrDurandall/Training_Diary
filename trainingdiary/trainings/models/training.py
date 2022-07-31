@@ -19,9 +19,10 @@ class Training(models.Model):
     date = models.DateField(
         verbose_name='Дата тренировки',
     )
-    # TODO:
-    #  Добавить many_to_many для подходов после создания модели подхода
-    #  sets = model.ManyToMany()
+    sets = models.ManyToManyField(
+        'ExerciseSet',
+        verbose_name='Подходы',
+    )
     comment = models.TextField(
         verbose_name='Комментарии к тренировке',
         null=True,
