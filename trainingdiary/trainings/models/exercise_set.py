@@ -1,4 +1,5 @@
 from django.db import models
+
 from exercises.models import Exercise
 
 
@@ -34,7 +35,7 @@ class ExerciseSet(models.Model):
         null=True,
         blank=True,
     )
-    done = models.BooleanField(
+    is_done = models.BooleanField(
         verbose_name='Выполнено',
         default=False,
     )
