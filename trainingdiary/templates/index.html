@@ -1,10 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+  <div class="container">
+    <h1 class="mt-5">Приветствую на заглавной странице дневника тренировок!</h1>
+    <p class="lead">Пока тут пусто!</p>
+    <p>В перспективе MVP проекта:</p>
+    <ol>
+      <li>хранить базу знаний спортивных упражнений</li>
+      <li>позволять планировать тренировки - когда, сколько и каких упражнений</li>
+      <li>позволять фиксировать результаты тренировки</li>
+    </ol>
+  </div>
+
+{% endblock %}
